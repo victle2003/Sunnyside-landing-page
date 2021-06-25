@@ -1,0 +1,590 @@
+/* ------------- Global specifications --------------- */
+
+:root {
+    font-size: 18px;
+
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-cyan: hsl(168, 45%, 32%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --light-desaturated-cyan: hsl(167, 44%, 70%);
+
+    --dark-desaturated-blue: hsl(212, 27%, 19%);
+    --dark-moderate-blue: hsl(198, 58%, 39%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, #CTA, #menuCTA {
+    font-family: 'Fraunces', serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#mainGrid h1, #mainGrid h2, h4 {
+    font-weight: 900;
+}
+
+html {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+a {
+    color: var(--dark-desaturated-blue);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+#logo {
+    transform: scale(1.3);
+}
+
+nav #logo {
+    margin-left: 1.5em;
+    align-self: center;
+    margin-right: auto;
+}
+
+nav a {
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+}
+
+nav #navSwitch {
+    padding: 0;
+    background-color: rgba(255,255, 255, 0);
+    border: none;
+    outline: none;
+}
+
+.navItems {
+    color: inherit;
+}
+
+.menuClosed {
+    display: none;
+}
+
+.menuOpened {
+    transition: opacity 0.2 ease-in;
+    position: absolute;
+    top: calc(2em + 48px);
+    right: 1.5em;
+    left: 1.5em;
+}
+
+#corner {
+    height: 0;
+    width: 0;
+    margin-left: auto;
+    border-top: 24px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 24px solid white;
+}
+
+#menuItemsContainer {
+    background-color: white;
+    padding: 2em 0;
+}
+
+.menuItems {
+    display: block;
+    margin: 2em 0;
+    color: var(--dark-grayish-blue);
+}
+
+.menuItems:nth-of-type(1) {
+    margin: 0;
+}
+
+#menuCTA {
+    display: inline-block;
+    background-color: var(--yellow);
+    margin: 0;
+}
+
+#CTA {
+    transition: color 0.2s ease, background-color 0.2s ease;
+    background: rgba(255,255, 255, 1);
+}
+
+#menuCTA, #CTA {
+    color: var(--dark-desaturated-blue);
+    border-radius: 40px;
+    padding: 1em 1.8em;
+}
+
+#CTA:hover {
+    color: white;
+    background: rgba(255,255, 255, 0.3);
+}
+
+#arrowContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.gridItem {
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridItem p {
+    margin: 2em 0;
+}
+
+.noBackground {
+    align-self: center;
+}
+
+.noBackground p {
+    color: var(--dark-grayish-blue);
+}
+
+.noBackground h1 {
+    color: var(--dark-desaturated-blue);
+}
+
+#transform .subline {
+    background-color: var(--yellow);
+}
+
+#standOut .subline {
+    background-color: var(--soft-red);
+}
+
+.subline {
+    transition: opacity 0.2s ease;
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    height: 0.6em;
+    width: 8em;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.noBackground h4:hover .subline {
+    opacity: 1;
+}
+
+.withBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.withBackgroundContent {
+    margin-top: auto;
+}
+
+.withBackgroundContent p {
+    margin: 0;
+}
+
+#cherry {
+    color: var(--dark-moderate-cyan);
+}
+
+#cherry h2 {
+    color: var(--dark-desaturated-cyan);
+}
+
+#tangerine {
+    color: var(--dark-moderate-blue);
+}
+
+#tangerine h2 {
+    color: var(--dark-blue);
+}
+
+#testimonials {
+    padding: 9em;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+#testimonials h3 {
+    letter-spacing: 5px;
+    margin-bottom: 4em;
+}
+
+.pfp {
+    width: 70px;
+    height: 70px;
+}
+
+.testimonialText {
+    color: var(--very-dark-grayish-blue);
+}
+
+.name, .role {
+    margin: 0.5em 0;
+}
+
+.name {
+    color: var(--dark-desaturated-blue);
+}
+
+.role {
+    font-size: 0.9em;
+}
+
+.galleryItem {
+    background-size: cover;
+    background-position: top left;
+}
+
+footer {
+    background-color: var(--light-desaturated-cyan);
+    padding: 4em 0;
+    color: var(--dark-moderate-cyan);
+}
+
+footer #logo path {
+    fill: var(--dark-cyan);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--dark-moderate-cyan);
+}
+
+footer a, footer a svg path {
+    transition: color 0.2s ease, fill 0.2s ease;
+}
+
+footer a:hover, footer a:hover svg path {
+    color: white;
+    fill: white;
+}
+
+#footerItemsContainer {
+    margin: 2em 0 4em 0;
+}
+
+#footerItemsContainer a {
+    text-align: center;
+    width: 70px;
+    margin: 0 1.5em;
+}
+
+#footerIconsContainer a {
+    margin: 0 0.7em;
+}
+
+/*------------------ Media queries -----------------*/
+
+@media (max-width: 1125px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 885px) {
+    :root {
+        font-size: 12px;
+    }
+
+    header {
+        height: 143.5vw;
+    }
+}
+
+@media (min-width: 885px) {
+    header {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 760px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* ----------- Desktop ------------- */
+
+@media (min-width: 636px) {
+
+    header {
+        background: url("images/desktop/image-header.jpg");
+        background-size: auto 100%;
+        background-position: center center;
+        padding: 1.5em 1.7em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin: 2em 0;
+        letter-spacing: 10px;
+    }
+
+    nav a {
+        display: flex;
+    }
+
+    #navSwitch {
+        display: none;
+    }
+
+    .menuOpened {
+        display: none;
+    }
+
+    #mainGrid {
+        display: grid;
+        grid-template-areas: "1st 2nd"
+                             "3rd 4th"
+                             "5th 6th";
+        grid-template-columns: repeat(2, calc(50vw - 0.62%));
+        grid-template-rows: repeat(3, 41.4vw);
+    }
+
+    #mainGrid h1 {
+            font-size: 2.5em;
+        }
+
+    .gridItem {
+        padding: 0 17.5%;
+    }
+
+    .withBackground {
+        padding: 0 25% 8% 25%;
+    }
+
+    .withBackground h2 {
+        margin-bottom: 1.3em;
+    }
+
+    #transform {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+    #egg {
+        background-image: url("images/desktop/image-transform.jpg");
+    }
+    
+    #cup {
+        background-image: url("images/desktop/image-stand-out.jpg");
+    }
+
+    #cherry {
+        padding-left: 22.5%;
+        padding-right: 22.5%;
+        background-image: url("images/desktop/image-graphic-design.jpg");
+    }
+
+    #tangerine {
+        background-image: url("images/desktop/image-photography.jpg");
+    }
+
+    .learn {
+        margin-left: 0.3em;
+    }
+
+    .subline {
+        transform: translate(-0.3em, -0.4em);
+    }
+
+    #testimonialsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+
+    .testimonialText {
+        margin: 3.5em 0;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(4, calc(25vw - 0.31%));
+        grid-template-rows: 30.94vw;
+    }
+
+    #milk {
+        background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+    }
+    
+    #slicedOrange {
+        background-image: url("images/desktop/image-gallery-orange.jpg");
+    }
+    
+    #cone {
+        background-image: url("images/desktop/image-gallery-cone.jpg");
+    }
+    
+    #sugarCubes {
+        background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+    }
+}
+
+/* ----------- Mobile ------------- */
+
+@media (max-width: 635px) and (min-width: 330px) {
+    :root { 
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 635px) {
+
+    * {
+        text-align: center;
+    }
+
+    header {
+        background: url("images/mobile/image-header.jpg");
+        background-size: auto 100%;
+        background-position: center bottom;
+        padding: 2em 1.5em;
+    }
+
+    header h1 {
+        margin-top: 3em;
+        letter-spacing: 7px;
+    }
+
+    header #logo {
+        margin-left: 0;
+        transform: scale(1);
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #navSwitch {
+        display: inline-block;
+    }
+
+    .menuOpened {
+        display: block;
+    }
+
+    #mainGrid {
+        display: grid;
+        grid-template-areas: "1st" 
+                             "2nd"
+                             "3rd"
+                             "4th"
+                             "5th" 
+                             "6th";
+        grid-template-columns: 100vw;
+        grid-template-rows: 83.3vw auto 83.3vw auto repeat(2, 160vw);
+    }
+
+    #mainGrid h1 {
+        font-size: 1.8rem;
+    }
+
+    #mainGrid h2 {
+        font-size: 1.65em;
+    }
+
+    .gridItem, #testimonials {
+        padding: 3em 1.5em;
+    }
+
+    #egg {
+        background-image: url("images/mobile/image-transform.jpg");
+    }
+    
+    #cup {
+        background-image: url("images/mobile/image-stand-out.jpg");
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #cherry {
+        background-image: url("images/desktop/image-graphic-design.jpg");
+    }
+
+    #tangerine {
+        background-image: url("images/desktop/image-photography.jpg");
+    }
+
+    .subline {
+        transform: translate(-50%, -0.4em);
+    }
+
+    #testimonialsContainer {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 3em;
+    }
+
+    #testimonials h3 {
+        font-size: 0.9em;
+        letter-spacing: 4px;
+    }
+
+    .testimonialText {
+        margin: 2em 0;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(2, 50vw);
+    }
+
+    #milk {
+        background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+    }
+    
+    #slicedOrange {
+        background-image: url("images/mobile/image-gallery-orange.jpg");
+    }
+    
+    #cone {
+        background-image: url("images/mobile/image-gallery-cone.jpg");
+    }
+    
+    #sugarCubes {
+        background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+    }
+}
