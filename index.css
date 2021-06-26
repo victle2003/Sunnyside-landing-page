@@ -31,7 +31,7 @@ header h1 {
     text-align: center;
 }
 
-#mainGrid h1, #mainGrid h2, h4 {
+h1, #mainGrid h1, #mainGrid h2, h4 {
     font-weight: 900;
 }
 
@@ -321,21 +321,21 @@ footer a:hover, footer a:hover svg path {
         font-size: 12px;
     }
 
-    header {
+    /* header {
         height: 143.5vw;
-    }
+    } */
 }
 
 @media (min-width: 885px) {
-    header {
+    /* header {
         height: 100vh;
-    }
+    } */
 }
 
-@media (max-width: 760px) {
-    :root {
-        font-size: 10px;
-    }
+@media (max-width: 768px) {
+    /* header {
+        height: 70vh;
+    } */
 }
 
 @media (max-width: 330px) {
@@ -353,6 +353,7 @@ footer a:hover, footer a:hover svg path {
         background-size: auto 100%;
         background-position: center center;
         padding: 1.5em 1.7em;
+        height: 90vh;
     }
 
     header h1 {
@@ -481,6 +482,7 @@ footer a:hover, footer a:hover svg path {
         background-size: auto 100%;
         background-position: center bottom;
         padding: 2em 1.5em;
+        height: 70vh;
     }
 
     header h1 {
