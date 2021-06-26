@@ -326,17 +326,17 @@ footer a:hover, footer a:hover svg path {
     } */
 }
 
-@media (min-width: 885px) {
-    /* header {
+/* @media (min-width: 885px) {
+    header {
         height: 100vh;
-    } */
+    }
 }
 
 @media (max-width: 768px) {
-    /* header {
+    header {
         height: 70vh;
-    } */
-}
+    }
+} */
 
 @media (max-width: 330px) {
     :root {
@@ -357,7 +357,7 @@ footer a:hover, footer a:hover svg path {
     }
 
     header h1 {
-        font-size: 2.5em;
+        font-size: 3em;
         margin: 2em 0;
         letter-spacing: 10px;
     }
