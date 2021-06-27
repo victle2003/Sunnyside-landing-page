@@ -320,23 +320,7 @@ footer a:hover, footer a:hover svg path {
     :root {
         font-size: 12px;
     }
-
-    /* header {
-        height: 143.5vw;
-    } */
 }
-
-/* @media (min-width: 885px) {
-    header {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        height: 70vh;
-    }
-} */
 
 @media (max-width: 330px) {
     :root {
@@ -379,7 +363,7 @@ footer a:hover, footer a:hover svg path {
         grid-template-areas: "1st 2nd"
                              "3rd 4th"
                              "5th 6th";
-        grid-template-columns: repeat(2, calc(50vw - 0.62%));
+        grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(3, 41.4vw);
     }
 
@@ -442,7 +426,7 @@ footer a:hover, footer a:hover svg path {
 
     #gallery {
         display: grid;
-        grid-template-columns: repeat(4, calc(25vw - 0.31%));
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: 30.94vw;
     }
 
@@ -515,7 +499,7 @@ footer a:hover, footer a:hover svg path {
                              "4th"
                              "5th" 
                              "6th";
-        grid-template-columns: 100vw;
+        grid-template-columns: 100%;
         grid-template-rows: 83.3vw auto 83.3vw auto repeat(2, 160vw);
     }
 
@@ -570,7 +554,7 @@ footer a:hover, footer a:hover svg path {
 
     #gallery {
         display: grid;
-        grid-template-columns: repeat(2, 50vw);
+        grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50vw);
     }
 
