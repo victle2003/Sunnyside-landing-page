@@ -27,11 +27,15 @@ h1, h2, h3, h4, #CTA, #menuCTA {
     font-family: 'Fraunces', serif;
 }
 
+header {
+    height: 70vh;
+}
+
 header h1 {
     text-align: center;
 }
 
-h1, #mainGrid h1, #mainGrid h2, h4 {
+h1, #mainGrid h1, #mainGrid h2, #testimonials h3, h4 {
     font-weight: 900;
 }
 
@@ -47,7 +51,7 @@ body {
 }
 
 p {
-    font-weight: lighter;
+    font-weight: 600;
     line-height: 1.5em;
 }
 
@@ -75,7 +79,7 @@ nav {
 nav a {
     justify-content: center;
     align-items: center;
-    margin: 0 1em;
+    margin: 0 1.3em;
 }
 
 nav #navSwitch {
@@ -133,11 +137,13 @@ nav #navSwitch {
 }
 
 #CTA {
+    margin-right: 0;
     transition: color 0.2s ease, background-color 0.2s ease;
     background: rgba(255,255, 255, 1);
 }
 
 #menuCTA, #CTA {
+    font-size: 0.9em;
     color: var(--dark-desaturated-blue);
     border-radius: 40px;
     padding: 1em 1.8em;
@@ -229,7 +235,7 @@ nav #navSwitch {
 }
 
 #testimonials {
-    padding: 9em;
+    padding: 8em 9em;
     color: var(--grayish-blue);
     text-align: center;
 }
@@ -316,7 +322,7 @@ footer a:hover, footer a:hover svg path {
     }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 892px) {
     :root {
         font-size: 12px;
     }
@@ -328,6 +334,12 @@ footer a:hover, footer a:hover svg path {
     }
 }
 
+@media (min-width: 636px) and (orientation: landscape) {
+    header {
+        height: 90vh;
+    }
+}
+
 /* ----------- Desktop ------------- */
 
 @media (min-width: 636px) {
@@ -336,8 +348,7 @@ footer a:hover, footer a:hover svg path {
         background: url("images/desktop/image-header.jpg");
         background-size: auto 100%;
         background-position: center center;
-        padding: 1.5em 1.7em;
-        height: 90vh;
+        padding: 1.7em 1.7em;
     }
 
     header h1 {
@@ -466,7 +477,6 @@ footer a:hover, footer a:hover svg path {
         background-size: auto 100%;
         background-position: center bottom;
         padding: 2em 1.5em;
-        height: 70vh;
     }
 
     header h1 {
